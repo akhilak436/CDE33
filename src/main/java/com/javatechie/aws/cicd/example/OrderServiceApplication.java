@@ -25,6 +25,12 @@ public class OrderServiceApplication {
                 sorted(Comparator.comparing(Order::getPrice)).collect(Collectors.toList());
     }
     
+    @GetMapping("/hello")
+    public String getMsg() {
+    	return "hello this is akhila";
+    	
+    }
+    
     
 
     public static void main(String[] args) {
